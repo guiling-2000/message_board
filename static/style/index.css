@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid #444; */
+}
+body {
+	padding: 0 15px;
+	background-image: url(../images/manage.jpg);
+	background-repeat: no-repeat;
+	-webkit-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix::after {
+	content: '.';
+	height: 0; width: 0;
+	display: block;
+	clear: both;
+}
+.clearfix::before {
+	content: '.';
+	height: 0; width: 0;
+	display: block;
+	clear: both;
+}
+.top-nav {
+	overflow: hidden;
+	background: rgba(13, 195, 235, 0.5);
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+.top-nav a + a {
+	margin-left: 20px;
+}
+.top-nav a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 18px;
+}
+.top-nav a:hover {
+	color: #fff;
+}
+.message_item {
+	background: rgba(13, 195, 235, 0.4);
+	overflow: hidden;
+	padding: 8px;
+}
+.message_item + .message_item {
+	margin-top: 15px;
+}
+.message_item .name {
+	float: left;
+	color: #ddd;
+}
+.message_item .message_time {
+	float: right;
+	color: #eee;
+	margin: 5px 5px 0 0;
+}
+.message_item .content {
+	clear: both;
+	color: #fff;
+	font-size: 18px;
+	border-top: 1px solid #fff;
+	padding-left: 20px;
+}
+
+form {
+	width: 250px;
+	margin: 30px auto;
+}
+form > * {
+	width: 100%;
+	border: none;
+	margin-bottom: 5px;
+}
+form input {
+	padding: 8px 0;
+}
+form input,
+form textarea {
+	color: #fff;
+	font-size: 18px;
+}
+form input,
+form textarea {
+	background: rgba(13, 195, 235, 0.4);
+}
+form input:hover,
+form textarea:hover {
+	background: rgba(52, 255, 103, .8);
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #fff;
+	font-size: 18px;
+}
+
+.item:hover {
+	background: rgba(52, 255, 103, .8);
+}

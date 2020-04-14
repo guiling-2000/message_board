@@ -1,0 +1,23 @@
+.message_item {
+  position: relative;
+}
+.message_item button {
+  display: inline-block;
+  position: absolute;
+  top: 46px; right: 30px;
+  border: none; outline: none;
+  cursor: pointer;
+  border-radius: 8px 0 8px 0;
+  padding: 3px 8px;
+}
+.message_item button a {
+  text-decoration: none;
+  display: block;
+  background: rgba(0,0,0,.1);
+  padding: 3px;
+  color: #444;
+}
+.message_item button a:hover {
+  color: #888;
+
+}

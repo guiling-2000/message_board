@@ -1,0 +1,84 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-image: url(../images/manage.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #ccc; */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top-nav {
+  background: rgba(0, 255, 226, 0.15);
+}
+.top-nav a {
+  color: #eee;
+}
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.message {
+  -webkit-box-shadow: 1px 1px 20px 10px rgba(255,255,255, .3),
+                      -1px 0 20px 10px rgba(255,255,255, .3);
+  box-shadow: 1px 1px 20px 10px rgba(255,255,255, .3),
+              -1px 0 20px 10px rgba(255,255,255, .3);
+}
+.message_item {
+  overflow: hidden;
+  background: rgba(0, 255, 226, 0.2);
+  border-radius: 25px 0 25px 0;
+}
+.message_item + .message_item {
+  margin-top: 30px;
+}
+.message_item .name {
+  float: left;
+}
+.message_item .content,
+.message_item .name,
+.message_item .time {
+  padding: 8px;
+}
+.message_item .name {
+  background-color: rgba(13, 195, 235, 0.4);
+  font-size: 18px;
+}
+.message_item .time {
+  float: right;
+}
+.message_item .content {
+  clear: both;
+  padding: 10px 30px;
+  border-top: 2px solid #fff;
+  background: rgba(9, 255, 0, 0.28);
+}
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+  background: rgba(95, 160, 221, 0.3);
+}
+.pagination a:hover {
+  background: rgba(25, 228, 228, 0.6);
+}
+.pagination a + a {
+  border-left: 2px solid #ccc;
+}
+.pagination .active {
+  background: rgba(25, 228, 228, 0.6);
+}
+.message_item button {
+  display: none;
+}

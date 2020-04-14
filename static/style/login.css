@@ -1,0 +1,92 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-image: url(../images/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+* {
+  padding: 0; margin: 0;
+  /* border: 1px solid #666; */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width:1050px) {
+	body {
+		background-repeat: repeat-y;
+	}
+}
+.container {
+  width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10%; left: 10%;
+}
+form .title h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 20px;
+  color: rgb(66, 237, 254);
+}
+form .info .item {
+  color: rgb(66, 237, 254);
+  margin-bottom: 10px;
+  border: 1px solid rgb(66, 237, 254);
+}
+form .info .item input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+form .info input::-webkit-input-placeholder {
+  color: #888;
+  font-size: 20px;
+}
+form .info .item:nth-child(3) {
+  overflow: hidden;
+}
+form .info #captcha,
+form .info #captcha_img {
+  float: left;
+}
+form .info #captcha {
+  width: 60%;
+  /* padding: 10px; */
+}
+form .info #captcha_img {
+  width: 40%;
+  cursor: pointer;
+}
+form .info input,
+form .else input {
+  font-size: 18px;
+}
+form .else {
+  text-align: center;
+}
+form .else input {
+  width: 100%;
+  border: none;
+  padding:10px 30px;
+  color: #fff;;
+  background: rgb(66, 237, 254);
+}
+form .else input:hover {
+  color: #eee;
+}
+form .else a {
+  float: right;
+  color: #ddd;
+  font-size: 14px;
+  text-decoration: none;
+}
+form .else a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.top-nav {
+  background: rgba(62, 116, 144, .2);
+}

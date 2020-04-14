@@ -1,0 +1,39 @@
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix::after {
+	content: '.';
+	height: 0; width: 0;
+	display: block;
+	clear: both;
+}
+.clearfix::before {
+	content: '.';
+	height: 0; width: 0;
+	display: block;
+	clear: both;
+}
+.top-nav {
+	overflow: hidden;
+	background: rgba(13, 195, 235, 0.5);
+	padding: 8px 16px;
+	margin-bottom: 20px;
+}
+.top-nav a + a {
+	margin-left: 20px;
+}
+.top-nav a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 18px;
+}
+.top-nav a:hover {
+	color: #fff;
+}
+
+input[type=submit] {
+	cursor: pointer;
+}
